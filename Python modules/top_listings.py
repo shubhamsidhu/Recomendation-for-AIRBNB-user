@@ -41,11 +41,15 @@ if __name__ == '__main__':
 
 	top_listings = top_10(records,ind,num)
 
+	top_listing_urls=list()
 	for listing in top_listings :
 		webbrowser.open("http://airbnb.com/rooms/"+listing[0])
+		top_listing_urls.append("http://airbnb.com/rooms/"+listing[0])
 
-	print(top_listings)
-
+	#print(top_listings)
+	for room in top_listing_urls :
+		print("The Listing Urls as below")
+		print(room)
 
 
 
