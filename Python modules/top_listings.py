@@ -16,7 +16,8 @@ if __name__ == '__main__':
 	try:
 		user_input  = int(input('enter 1 : by_review , 2 : by_review_count , 3 : by_price  :'))
 		num = int(input('enter num of listing  :'))
-		
+		if not user_input :
+			user_input=1
 	except:
 		print('enter appropriate numbers')
 
