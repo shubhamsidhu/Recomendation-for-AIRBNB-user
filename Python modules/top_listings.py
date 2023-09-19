@@ -13,16 +13,16 @@ def top_10 (records,ind,num = 5):
 
 if __name__ == '__main__':
 	num = 5
-	try:
+	'''try:
 		user_input  = int(input('enter 1 : by_review , 2 : by_review_count , 3 : by_price  :'))
 		num = int(input('enter num of listing  :'))
 		if not user_input :
 			user_input=1
 	except:
 		print('enter appropriate numbers')
-
+	'''
 	
-
+	user_input = 1
 	if user_input == 1:
 		ind = 60
 	elif user_input == 2:
@@ -48,8 +48,9 @@ if __name__ == '__main__':
 		top_listing_urls.append("http://airbnb.com/rooms/"+listing[0])
 
 	#print(top_listings)
+	print("The Listing Urls as below")
 	for room in top_listing_urls :
-		print("The Listing Urls as below")
+		
 		print(room)
 
 
